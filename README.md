@@ -2,6 +2,13 @@
 
 Native macOS dialog for reviewing Azure DevOps MCP write operations before they execute. See what's changing, approve or cancel.
 
+### Update — word-level diff
+![Update Dialog](docs/demo-update.png)
+
+### Create — field summary
+![Create Dialog](docs/demo-create.png)
+
+### Batch update — table with old → new
 ![Batch Update Dialog](docs/demo-batch-update.png)
 
 ## Why
