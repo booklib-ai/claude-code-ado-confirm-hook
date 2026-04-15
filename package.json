@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZLStas/claude-code-ado-confirm-hook"
+    "url": "https://github.com/booklib-ai/claude-code-ado-confirm-hook"
   },
   "bin": {
     "claude-ado-confirm-hook": "bin/install.js"
