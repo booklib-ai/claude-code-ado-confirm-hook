@@ -1,0 +1,32 @@
+{
+  "name": "claude-ado-confirm-hook",
+  "version": "1.0.0",
+  "description": "Native macOS confirmation dialog for Azure DevOps MCP write operations in Claude Code",
+  "keywords": [
+    "claude-code",
+    "azure-devops",
+    "mcp",
+    "hooks",
+    "confirmation-dialog",
+    "macos"
+  ],
+  "author": "ZLStas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZLStas/claude-code-ado-confirm-hook"
+  },
+  "bin": {
+    "claude-ado-confirm-hook": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "hooks/",
+    "README.md",
+    "LICENSE"
+  ],
+  "os": ["darwin"],
+  "engines": {
+    "node": ">=16"
+  }
+}

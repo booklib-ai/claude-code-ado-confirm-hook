@@ -19,19 +19,22 @@ This hook intercepts MCP write calls and shows a native macOS dialog with:
 ## Install
 
 ```bash
-# 1. Copy files to your project
+npx claude-ado-confirm-hook
+```
+
+This copies the hook files to `.claude/hooks/`, compiles the native dialog, and prints the settings config to add.
+
+### Manual install
+
+If you prefer not to use npm:
+
+```bash
 mkdir -p .claude/hooks
-cp hooks/ado-confirm.sh .claude/hooks/
-cp hooks/ado-confirm-dialog.py .claude/hooks/
-cp hooks/ado-webview.swift .claude/hooks/
+curl -sL https://raw.githubusercontent.com/ZLStas/claude-code-ado-confirm-hook/main/hooks/ado-confirm.sh -o .claude/hooks/ado-confirm.sh
+curl -sL https://raw.githubusercontent.com/ZLStas/claude-code-ado-confirm-hook/main/hooks/ado-confirm-dialog.py -o .claude/hooks/ado-confirm-dialog.py
+curl -sL https://raw.githubusercontent.com/ZLStas/claude-code-ado-confirm-hook/main/hooks/ado-webview.swift -o .claude/hooks/ado-webview.swift
 chmod +x .claude/hooks/ado-confirm.sh .claude/hooks/ado-confirm-dialog.py
-
-# 2. Compile the native dialog (macOS only)
-swiftc -framework Cocoa -framework WebKit -O \
-  -o .claude/hooks/ado-webview .claude/hooks/ado-webview.swift
-
-# 3. Add binary to .gitignore
-echo ".claude/hooks/ado-webview" >> .gitignore
+swiftc -framework Cocoa -framework WebKit -O -o .claude/hooks/ado-webview .claude/hooks/ado-webview.swift
 ```
 
 ## Configure
