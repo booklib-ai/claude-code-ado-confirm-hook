@@ -61,7 +61,7 @@ Add to `.claude/settings.local.json`:
 }
 ```
 
-The hook reads your org name and PAT from `.mcp.json` automatically — no hardcoded config needed.
+The hook reads your org name and access token from `.mcp.json` automatically — no hardcoded config needed.
 
 ## How It Works
 
