@@ -8,7 +8,7 @@ Native macOS dialog for reviewing Azure DevOps MCP write operations before they 
 
 ## Why
 
-The [Azure DevOps MCP server](https://github.com/anthropics/azure-devops-mcp) lets Claude Code create, update, and link work items directly. But write operations execute immediately — no visual preview of what's about to change.
+The [Azure DevOps MCP server](https://github.com/microsoft/azure-devops-mcp) lets Claude Code create, update, and link work items directly. But write operations execute immediately — no visual preview of what's about to change.
 
 This hook intercepts MCP write calls and shows a native macOS dialog with:
 - **Updates:** side-by-side diff with word-level highlighting
@@ -78,7 +78,7 @@ The dialog appears on your current screen — no desktop switching.
 - **macOS** (Cocoa WebView)
 - **Xcode Command Line Tools** (for `swiftc`)
 - **jq**, **curl** (for the shell script)
-- Azure DevOps MCP server configured in `.mcp.json`
+- [Azure DevOps MCP server](https://github.com/microsoft/azure-devops-mcp) configured in `.mcp.json`
 
 ## Files
 
