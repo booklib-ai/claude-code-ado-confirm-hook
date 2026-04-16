@@ -1,5 +1,5 @@
 {
-  "name": "claude-ado-confirm-hook",
+  "name": "@booklib/claude-ado-confirm-hook",
   "version": "1.0.0",
   "description": "Native macOS confirmation dialog for Azure DevOps MCP write operations in Claude Code",
   "keywords": [

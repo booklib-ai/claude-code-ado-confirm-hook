@@ -19,7 +19,7 @@ This hook intercepts MCP write calls and shows a native macOS dialog with:
 ## Install
 
 ```bash
-npx claude-ado-confirm-hook
+npx @booklib/claude-ado-confirm-hook
 ```
 
 This copies the hook files to `.claude/hooks/`, compiles the native dialog, and prints the settings config to add.
